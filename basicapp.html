@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <title>Mobile App Dev</title>
+</head>
+
+<body>
+
+
+    <nav>
+        <img src="uber.png" alt="UBER" />
+
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+
+        <button>
+            Get Early Access 📱
+        </button>
+
+    </nav>
+
+
+
+    <div class="hero">
+        <div class="cont1">
+            <div class="par">
+                Discover, apply, succeed - UVER makes
+                college search effortless. Your future
+                starts right here.
+            </div>
+
+            <div class="time">
+                <h3 class="time-text">⌛ Launching starts in</h3>
+
+
+                <div class="time-cont">
+                    <h3 id="days">23</h3>
+                    <h3>:</h3>
+                    <h3 id="hours">22</h3>
+                    <h3>:</h3>
+                    <h3 id="mins">43</h3>
+                </div>
+
+                <div class="time-spec">
+                    <h4>days</h4>
+                    <h4>hours</h4>
+                    <h4>minutes</h4>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cont2">
+            <img src="smartphone.jpg" alt="telephone">
+        </div>
+
+        <div class="cont3">
+            <ul>
+                <li>🔍 SEARCH</li>
+                <li>💬 CHAT</li>
+                <li>📄 APPLY</li>
+                <li>📊 TRACK</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        var days = 22;
+var hours = 14;
+var minutes = 55;
+
+function counter() {
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("mins").innerHTML = minutes;
+
+    minutes--;
+
+    if (minutes < 0) {
+        minutes = 59;
+        hours--;
+    }
+
+    if (hours < 0) {
+        hours = 23;
+        days--;
+    }
+
+}
+
+counter();
+
+setInterval(counter, 1000);
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
